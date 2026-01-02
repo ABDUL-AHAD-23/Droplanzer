@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -35,14 +35,14 @@ const FocusView = ({ item, onClose }) => {
     );
   }, []);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     const tl = gsap.timeline({ onComplete: onClose });
     tl.to(wrapperRef.current, { opacity: 0, scale: 0.95, duration: 0.2 }).to(
       backdropRef.current,
       { opacity: 0, duration: 0.2 },
       "-=0.1"
     );
-  };
+  }, [onClose]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -52,7 +52,7 @@ const FocusView = ({ item, onClose }) => {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [handleClose]);
 
   const handleDoubleClick = (ref) => {
     const nextStep = (zoomStep + 1) % 3;
