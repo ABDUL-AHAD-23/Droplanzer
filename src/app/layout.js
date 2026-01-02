@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Design That Powers Real Business Growth",
+  title: "Droplanzer",
   description: "Experience the perfect blend of creativity, cutting-edge technology, and client-first strategies. We don’t just build websites — we craft digital experiences that inspire trust and drive results.",
 };
 

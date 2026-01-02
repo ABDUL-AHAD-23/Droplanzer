@@ -52,7 +52,7 @@ export const socialLinks = [
   {
     id: 1,
     name: "LinkedIn",
-    href: "https://www.linkedin.com/company/droplanzer-1369743a2/", // Replace with actual LinkedIn URL
+    href: "https://linkedin.com/in/droplanzer-1369743a2", // Replace with actual LinkedIn URL
     icon: FaLinkedinIn,
     hoverClass: "hover:bg-blue-600 hover:text-white",
   },
@@ -66,7 +66,7 @@ export const socialLinks = [
   {
     id: 3,
     name: "Instagram",
-    href: "https://www.instagram.com/droplanzer?igsh=YThiaG40M20ya2Y1/", // Replace with actual Instagram URL
+    href: "https://www.instagram.com/droplanzer?igsh=YThiaG40M20ya2Y1", // Replace with actual Instagram URL
     icon: FaInstagram,
     hoverClass: "hover:bg-pink-600 hover:text-white",
   },
@@ -76,48 +76,74 @@ export const socialLinks = [
 export const ourService = [
   {
     id: 1,
-    title: "Web Design",
+    title: "Web Design (UI/UX)",
     url: "/services/web-design",
   },
   {
     id: 2,
-    title: "Web Development",
-    url: "/services/web-development",
+    title: "App Development (UI/UX)",
+    url: "/services/app-development",
   },
   {
     id: 3,
-    title: "Branding",
-    url: "/services/branding",
+    title: "AI Automation & AI Agents",
+    url: "/services/ai-automation",
   },
   {
     id: 4,
-    title: "Ecommerce Website",
-    url: "/services/ecommerce-website",
+    title: "Graphic Design",
+    url: "/services/graphic-design",
   },
   {
     id: 5,
-    title: "Logo Design",
-    url: "/services/branding",
-  },
-  {
-    id: 6,
-    title: "SEO",
+    title: "SEO & AEO/GEO Optimization",
     url: "/services/seo",
   },
   {
+    id: 6,
+    title: "Content Writing",
+    url: "/services/content-writing",
+  },
+  {
     id: 7,
-    title: "Online Marketing",
-    url: "/services/online-marketing",
+    title: "Digital Marketing",
+    url: "/services/digital-marketing",
+  },
+  {
+    id: 8,
+    title: "Social Media Management",
+    url: "/services/social-media-management",
+  },
+  {
+    id: 9,
+    title: "E-Commerce Solutions",
+    url: "/services/e-commerce",
+  },
+  {
+    id: 10,
+    title: "YouTube Automation",
+    url: "/services/youtube-automation",
+  },
+  {
+    id: 11,
+    title: "Pay-Per-Click (PPC) Ads",
+    url: "/services/ppc-ads",
+  },
+  {
+    id: 12,
+    title: "Online Reputation Management",
+    url: "/services/reputation-management",
   },
 ];
 
+
 // Footer Links: Company
 export const ourCompany = [
-  {
+  /*{
     id: 1,
     title: "Our team",
     url: "/our-team",
-  },
+  },*/
   {
     id: 2,
     title: "FAQs",
@@ -491,7 +517,7 @@ export const projectList = [
   {
     id: 1,
     src: "/assets/imgs/webdevelopment/1.png",
-    title: "MnMist - Grow your sales fast.",
+    title: "MnMist: Grow your sales fast.",
     pera: "MnMist is an intelligent sales acceleration platform designed to provide your team with actionable insights and boost revenue.",
     url: "/",
     text: "View Projects",
@@ -499,7 +525,7 @@ export const projectList = [
   {
     id: 2,
     src: "/assets/imgs/webdevelopment/2.png",
-    title: "Agency - Designed for Impact.",
+    title: "Agency: Designed for Impact.",
     pera: "Agency is a premium business built to elevate brand and convert visitors into clients.",
     url: "/",
     text: "View Projects",
@@ -507,7 +533,7 @@ export const projectList = [
   {
     id: 3,
     src: "/assets/imgs/webdevelopment/3.png",
-    title: "InSync — Saas Landing Page",
+    title: "InSync: Saas Landing Page",
     pera: "InSync is a versatile landing page template designed to perfectly showcase collaboration software and team-focused features.",
     url: "/",
     text: "View Projects",
@@ -515,7 +541,7 @@ export const projectList = [
   {
     id: 4,
     src: "/assets/imgs/webdevelopment/4.png",
-    title: "FitBit - GYM Membership",
+    title: "FitBit: GYM Membership",
     pera: "It is a personalized fitness experience designed to combine premium gym access with data-driven insights from your tracker.",
     url: "/",
     text: "View Projects",
@@ -781,14 +807,14 @@ export const faqData = [
 export const founders = [
   {
     id: 1,
-    src: "/assets/imgs/founder.jpg",
-    name: "Aarav Sharma",
+    src: "/Artboard 2.1.svg",
+    name: "Shayan",
     role: "Founder & Chief Strategist",
   },
   {
     id: 2,
-    src: "/assets/imgs/Developer.jpg",
-    name: "Priya Deb",
+    src: "/Artboard 2.1.svg",
+    name: "Abdul Ahad",
     role: "Head of Design & Development",
   },
 ];
@@ -986,7 +1012,7 @@ export const projectAllList = [
   {
     id: 1,
     src: "/assets/imgs/webdevelopment/1.png",
-    title: "MnMist - Grow your sales fast.",
+    title: "MnMist: Grow your sales fast.",
     pera: "MnMist is an intelligent sales acceleration platform designed to provide your team with actionable insights and boost revenue.",
     url: "/",
     text: "View Projects",
@@ -994,7 +1020,7 @@ export const projectAllList = [
   {
     id: 2,
     src: "/assets/imgs/webdevelopment/2.png",
-    title: "Agency - Designed for Impact.",
+    title: "Agency: Designed for Impact.",
     pera: "Agency is a premium business built to elevate brand and convert visitors into clients.",
     url: "/",
     text: "View Projects",
@@ -1002,7 +1028,7 @@ export const projectAllList = [
   {
     id: 3,
     src: "/assets/imgs/webdevelopment/3.png",
-    title: "InSync — Saas Landing Page",
+    title: "InSync: Saas Landing Page",
     pera: "InSync is a versatile landing page template designed to perfectly showcase collaboration software and team-focused features.",
     url: "/",
     text: "View Projects",
@@ -1010,7 +1036,7 @@ export const projectAllList = [
   {
     id: 4,
     src: "/assets/imgs/webdevelopment/4.png",
-    title: "FitBit - GYM Membership",
+    title: "FitBit: GYM Membership",
     pera: "It is a personalized fitness experience designed to combine premium gym access with data-driven insights from your tracker.",
     url: "/",
     text: "View Projects",
@@ -1018,31 +1044,7 @@ export const projectAllList = [
   {
     id: 5,
     src: "/assets/imgs/webdevelopment/4.png",
-    title: "FitBit - GYM Membership",
-    pera: "It is a personalized fitness experience designed to combine premium gym access with data-driven insights from your tracker.",
-    url: "/",
-    text: "View Projects",
-  },
-  {
-    id: 6,
-    src: "/assets/imgs/webdevelopment/4.png",
-    title: "FitBit - GYM Membership",
-    pera: "It is a personalized fitness experience designed to combine premium gym access with data-driven insights from your tracker.",
-    url: "/",
-    text: "View Projects",
-  },
-  {
-    id: 7,
-    src: "/assets/imgs/webdevelopment/4.png",
-    title: "FitBit - GYM Membership",
-    pera: "It is a personalized fitness experience designed to combine premium gym access with data-driven insights from your tracker.",
-    url: "/",
-    text: "View Projects",
-  },
-  {
-    id: 8,
-    src: "/assets/imgs/webdevelopment/4.png",
-    title: "FitBit - GYM Membership",
+    title: "FitBit: GYM Membership",
     pera: "It is a personalized fitness experience designed to combine premium gym access with data-driven insights from your tracker.",
     url: "/",
     text: "View Projects",
@@ -1197,29 +1199,29 @@ export const processSteps = [
 // OUR Team profile pic
 export const teamData = [
   {
-    name: "Aarav Sharma",
+    name: "Shayan",
     role: "Founder & Lead Strategist",
     // Using a placeholder image service. Replace with your actual image paths.
-    imageUrl: "/assets/imgs/founder.jpg",
-    alt: "Portrait of Aarav Sharma",
+    imageUrl: "/Artboard 2.1.svg",
+    alt: "Portrait of Shayan",
   },
   {
-    name: "Priya Das",
+    name: "Abdul Ahad",
     role: "Head of Design & Development",
-    imageUrl: "/assets/imgs/Developer.jpg",
-    alt: "Portrait of Priya Das",
+    imageUrl: "/Artboard 2.1.svg",
+    alt: "Portrait of Abdul Ahad",
   },
   {
-    name: "Rohan Mehta",
+    name: "Zain Ali",
     role: "Senior UX/UI Designer",
-    imageUrl: "/assets/imgs/Developer.jpg",
-    alt: "Portrait of Rohan Mehta",
+    imageUrl: "/Artboard 2.1.svg",
+    alt: "Portrait of Zain Ali",
   },
   {
-    name: "Anika Reddy",
+    name: "Mark Wilson",
     role: "Lead SEO & Content Specialist",
-    imageUrl: "/assets/imgs/Developer.jpg",
-    alt: "Portrait of Anika Reddy",
+    imageUrl: "Ar",
+    alt: "Portrait of Mark Wilson ",
   },
 ];
 
