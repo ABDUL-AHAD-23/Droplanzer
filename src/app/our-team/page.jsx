@@ -1,4 +1,4 @@
-/*"use client";
+"use client";
 
 import React, { useRef } from "react";
 import Image from "next/image";
@@ -85,7 +85,7 @@ export default function OurTeam() {
     <>
       <Header />
       <main ref={container}>
-        {/* --- Hero Section --- }
+        {/* --- Hero Section --- */}
         <section className="flex justify-center items-center h-screen relative overflow-hidden">
           <VideoBackground url="/assets/videos/bgbackground.mp4" />
 
@@ -105,7 +105,7 @@ export default function OurTeam() {
           </div>
         </section>
 
-        {/* --- Team Grid Section --- }
+        {/* --- Team Grid Section --- */}
         <section ref={teamSection} className="py-20 lg:py-28 px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold max-w-4xl mx-auto">
@@ -117,7 +117,7 @@ export default function OurTeam() {
               precision and creativity.
             </p>
 
-            {/* --- Dynamic Team Member Grid --- }
+            {/* --- Dynamic Team Member Grid --- */}
             <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
               {teamData.map((member, index) => (
                 <div
@@ -125,7 +125,7 @@ export default function OurTeam() {
                   // We add a class here to easily target all cards for the stagger animation
                   className="flex flex-col items-center text-center space-y-4 team-member-card"
                 >
-                  {/* Circular Image Container }
+                  {/* Circular Image Container */}
                   <div className="w-48 h-48 md:w-56 md:h-56 relative">
                     <Image
                       className="object-cover rounded-full shadow-lg border-4 border-gray-700 transform transition-transform duration-300 hover:scale-105"
@@ -149,10 +149,10 @@ export default function OurTeam() {
           </div>
         </section>
 
-        {/* --- Call to Action Section --- }
+        {/* --- Call to Action Section --- */}
         <Cta />
       </main>
       <Footer />
     </>
   );
-}*/
+}

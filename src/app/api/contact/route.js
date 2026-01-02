@@ -37,9 +37,10 @@ export async function POST(req) {
           port: Number(process.env.SMTP_PORT),
           secure: process.env.SMTP_PORT === "465", // true for 465, false for other ports
           auth: {
-            user: process.env.SMTP_USER,
-            pass: process.env.SMTP_PASS,
-          },
+            user: process.env.SMTP_USERNAME,
+            pass: process.env.SMTP_PASSWORD,
+           },
+
         });
 
         // Send the notification email to yourself
