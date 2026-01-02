@@ -33,7 +33,7 @@ export const Footer = () => {
             <p className="text-gray-400 mb-6">
               Droplanzer
             </p>
-            <p className="text-gray-400 mb-6">03199231399</p>
+            <p className="text-gray-400 mb-6">droplanzer@gmail.com</p>
             <Link href="mailto:contact.droplanzer@gmail.com" target="_blank" className="text-gray-400 mb-6">contact.droplanzer@gmail.com</Link>
 
             <div className="flex space-x-3 mb-8">

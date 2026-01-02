@@ -52,21 +52,21 @@ export const socialLinks = [
   {
     id: 1,
     name: "LinkedIn",
-    href: "https://www.linkedin.com/company/yourcompany/", // Replace with actual LinkedIn URL
+    href: "https://www.linkedin.com/company/droplanzer-1369743a2/", // Replace with actual LinkedIn URL
     icon: FaLinkedinIn,
     hoverClass: "hover:bg-blue-600 hover:text-white",
   },
   {
     id: 2,
     name: "Facebook",
-    href: "https://Facebook.com/yourcompany", // Replace with actual X (Twitter) URL
+    href: "https://Facebook.com/droplanzer", // Replace with actual X (Twitter) URL
     icon: FaFacebook,
     hoverClass: "hover:bg-white hover:text-black",
   },
   {
     id: 3,
     name: "Instagram",
-    href: "https://www.instagram.com/yourcompany/", // Replace with actual Instagram URL
+    href: "https://www.instagram.com/droplanzer?igsh=YThiaG40M20ya2Y1/", // Replace with actual Instagram URL
     icon: FaInstagram,
     hoverClass: "hover:bg-pink-600 hover:text-white",
   },
