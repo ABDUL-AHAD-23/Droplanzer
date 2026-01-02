@@ -1,6 +1,6 @@
-# Droplanzer – Frontend for Website Agencies
+# Droplanzer 
 
-Droplanzer is a clean and fast Next.js template built for creative agencies, studios, and freelancers. It helps you present your services, portfolio, and digital projects in a professional way.
+Droplanzer is a clean and fast Next.js website for creative agencies, studios, and freelancers. 
 
 
 
