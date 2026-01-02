@@ -174,7 +174,7 @@ export const About = () => {
               className="text-slate-400 max-w-[90%] md:max-w-full md:mx-auto"
               ref={sectionPera}
             >
-              Webdesigo was born in 2020 from a simple belief: every business
+              Droplanzer was born in 2020 from a simple belief: every business
               deserves a powerful and elegant online presence. Our founders saw
               an opportunity to provide high-touch, custom web solutions in a
               world of templates and quick fixes.

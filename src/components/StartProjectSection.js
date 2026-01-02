@@ -80,7 +80,7 @@ export const StartProjectSection = () => {
         </ul>
 
         <div ref={buttonRef}>
-          <Button url="/start-project" text="Start a Project" />
+          <Button url="/contact" text="Start a Project" />
         </div>
       </div>
 

@@ -21,20 +21,20 @@ export const Footer = () => {
               className="mb-4"
             >
               <Image
-                src="/websigo.svg"
+                src="/Artboard 2.1.svg"
                 height={120}
                 width={120}
-                alt="webdesigo"
+                alt="Droplanzer"
               />
             </Link>
             <p className="text-gray-400 mb-6">
-              Crafting digital, one solution at a time.
+              Your Vision-Our Mission.
             </p>
             <p className="text-gray-400 mb-6">
-              WebDesigo LLC, 30 N Gould St Ste R Sheridan, WY, 82801, USA
+              Droplanzer
             </p>
-            <p className="text-gray-400 mb-6">+1 307 400 2532</p>
-            <Link href="mailto:thewebdesigo@gmail.com" target="_blank" className="text-gray-400 mb-6">thewebdesigo@gmail.com</Link>
+            <p className="text-gray-400 mb-6">03199231399</p>
+            <Link href="mailto:contact.droplanzer@gmail.com" target="_blank" className="text-gray-400 mb-6">contact.droplanzer@gmail.com</Link>
 
             <div className="flex space-x-3 mb-8">
               {socialLinks.map((link) => {
@@ -144,13 +144,13 @@ export const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="relative z-10 border-t border-gray-800 mt-12 pt-6 text-center md:flex md:justify-between text-gray-500 text-xs">
           <p className="mb-2 md:mb-0">
-            &copy; {new Date().getFullYear()} WebDesigo. All rights reserved.
+            &copy; {new Date().getFullYear()} Droplanzer. All rights reserved.
           </p>
           <p>
-            Designed by{" "}
-            <Link href="https://github.com/jmtygsh" target="_blank">
+            Designed by{" Droplanzer "} | Developed by{" "}
+            <Link href="https://github.com" target="_blank">
               {" "}
-              WebDesigo{" "}
+              Droplanzer{" "}
             </Link>{" "}
           </p>
         </div>

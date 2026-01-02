@@ -3,11 +3,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req) {
   try {
-    if (req.method !== "POST") {
-      return res.status(405).json({ message: "Method not allowed" });
-    }
-
-    const { name, email, message } = await req.json();
+    const { name, email, message, token } = await req.json();
 
     if (!name || !email || !message || !token) {
       return NextResponse.json(
@@ -49,7 +45,7 @@ export async function POST(req) {
         // Send the notification email to yourself
         const mailOptionsToAdmin = {
           from: `"${name}" <${email}>`, // Use user's email as sender
-          to: process.env.YOUR_EMAIL_ADDRESS,
+          to: process.env.ADMIN_EMAIL,
           subject: "New Message from Contact Form",
           html: `<p>You have a new message from:</p>
              <p><strong>Name:</strong> ${name}</p>
@@ -60,14 +56,14 @@ export async function POST(req) {
 
         // Send the auto-reply confirmation email to the user
         const mailOptionsToUser = {
-          from: `"WebDesigo" <${process.env.SMTP_USER}>`,
+          from: `"Droplanzer" <${process.env.SMTP_USER}>`,
           to: email,
           subject: "We have received your message!",
           html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 30px; background-color: #f9f9f9; border-radius: 8px; border: 1px solid #e0e0e0;">
       <!-- Logo -->
       <div style="text-align: center; margin-bottom: 20px;">
-        <img src="https://Webdesigo.com/websigo.svg" alt="WebDesigo Logo" style="width: 120px;" />
+        <img src="/Artboard 2.1.svg" alt="Droplanzer Logo" style="width: 120px;" />
       </div>
 
       <!-- Greeting -->
@@ -75,7 +71,7 @@ export async function POST(req) {
 
       <!-- Message -->
       <p style="font-size: 16px; color: #555;">
-        Thank you for contacting <strong>WebDesigo</strong>. We’ve received your message and a member of our team will get back to you as soon as possible.
+        Thank you for contacting <strong>Droplanzer</strong>. We’ve received your message and a member of our team will get back to you as soon as possible.
       </p>
 
       <p style="font-size: 16px; color: #555;">
@@ -84,16 +80,16 @@ export async function POST(req) {
 
       <!-- Contact Info -->
       <div style="margin-top: 20px;">
-        <p style="font-size: 16px; color: #555; margin-bottom: 5px;"><strong>📞 Phone:</strong> <a href="tel:+1234567890" style="color: #007bff; text-decoration: none;">+1 (234) 567-890</a></p>
-        <p style="font-size: 16px; color: #555; margin-bottom: 5px;"><strong>🌐 Website:</strong> <a href="https://www.webdesigo.com" target="_blank" style="color: #007bff; text-decoration: none;">www.webdesigo.com</a></p>
-        <p style="font-size: 16px; color: #555;"><strong>📧 Email:</strong> <a href="mailto:thewebdesigo@gmail.com" style="color: #007bff; text-decoration: none;">thewebdesigo@gmail.com</a></p>
+        <p style="font-size: 16px; color: #555; margin-bottom: 5px;"><strong>📞 Phone:</strong> <a href="tel:+03199231399" style="color: #007bff; text-decoration: none;">03199231399</a></p>
+        <p style="font-size: 16px; color: #555; margin-bottom: 5px;"><strong>🌐 Website:</strong> <a href="/" target="_blank" style="color: #007bff; text-decoration: none;">Visit our website</a></p>
+        <p style="font-size: 16px; color: #555;"><strong>📧 Email:</strong> <a href="mailto:contact.droplanzer@gmail.com" style="color: #007bff; text-decoration: none;">contact.droplanzer@gmail.com</a></p>
       </div>
 
       <!-- Footer -->
       <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;" />
 
       <div style="font-size: 12px; color: #aaa; text-align: center;">
-        &copy; ${new Date().getFullYear()} WebDesigo. All rights reserved.<br/>
+        &copy; ${new Date().getFullYear()} Droplanzer. All rights reserved.<br/>
         You are receiving this email because you contacted us via our website.
       </div>
     </div>
@@ -116,7 +112,7 @@ export async function POST(req) {
           { status: 400 }
         );
       }
-    } catch {
+    } catch (error) {
       console.error("reCAPTCHA response error:", error);
       return NextResponse.json(
         { error: "reCAPTCHA Failed" },

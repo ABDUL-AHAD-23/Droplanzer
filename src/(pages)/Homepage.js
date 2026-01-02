@@ -675,7 +675,7 @@ export const Homepage = () => {
             Our Story & Mission
           </h3>
           <p className="z-2 text-slate-400 mt-2">
-            Discover who we are and our mission at WebDesigo.
+            Discover who we are and our mission at Droplanzer.
             <br className="md:hidden" />
             <br className="md:hidden" />
             We are a passionate team of creative professionals dedicated to

@@ -19,9 +19,7 @@ const WebsiteUseTermsContent = () => (
         {/* Introductory Block */}
         <div className="bg-gray-50 border-l-4 border-blue-600 p-4 sm:p-6 rounded-r-lg">
           <p className="text-sm sm:text-base">
-            This page sets out the terms of use of our website www.webdesigo.com
-            (our site). Please read these terms of use carefully before using
-            our site.
+            This page sets out the terms of use of our website (our site). Please read these terms of use carefully before using our site.
           </p>
         </div>
 
@@ -40,7 +38,7 @@ const WebsiteUseTermsContent = () => (
             </li>
             <li>
               All proprietary rights in the material displayed and/or received
-              shall remain the property of WebDesigo LLC.
+              shall remain the property of Droplanzer.
             </li>
           </ul>
         </div>
@@ -76,10 +74,10 @@ const WebsiteUseTermsContent = () => (
             If you wish to make any use of material on our site please address
             your request to{" "}
             <a
-              href="mailto:webdesigollc@gmail.com"
+              href="mailto:contact.droplanzer@gmail.com"
               className="text-blue-600 font-semibold hover:underline"
             >
-              webdesigollc@gmail.com
+              contact.droplanzer@gmail.com
             </a>
             .
           </p>

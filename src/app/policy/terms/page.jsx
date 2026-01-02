@@ -19,7 +19,7 @@ const TermsAndConditionsContent = () => (
         {/* Introductory Agreement Block */}
         <div className="bg-gray-50 border-l-4 border-blue-600 p-4 sm:p-6 rounded-r-lg">
           <p className="text-sm sm:text-base">
-            By placing an order with Webdesigo LLC, you confirm that you are in
+            By placing an order with Droplanzer, you confirm that you are in
             agreement with and bound by the terms and conditions below.
           </p>
         </div>
@@ -34,11 +34,11 @@ const TermsAndConditionsContent = () => (
               <strong className="font-sans font-semibold text-gray-800">
                 The Client:
               </strong>{" "}
-              The company or individual requesting the services of Webdesigo LLC.
+              The company or individual requesting the services of Droplanzer.
             </p>
             <p>
               <strong className="font-sans font-semibold text-gray-800">
-                Webdesigo LLC:
+                Droplanzer:
               </strong>{" "}
               Primary website and print designer, content writers, website
               optimisers, site owner and employees or affiliates.
@@ -52,11 +52,11 @@ const TermsAndConditionsContent = () => (
             General
           </h2>
           <p className="mt-4 text-sm sm:text-base">
-            Webdesigo LLC will carry out work only where an agreement is provided
+            Droplanzer will carry out work only where an agreement is provided
             either by email, telephone, mail or fax, or at the company’s
-            discretion a verbal instruction. Webdesigo LLC will
+            discretion a verbal instruction. Droplanzer will
             not work for clients who are under eighteen years of age. An ‘order’
-            is deemed to be a written or verbal contract between Webdesigo LLC and
+            is deemed to be a written or verbal contract between Droplanzer and
             the client, this includes telephone and email agreements.
           </p>
         </div>
@@ -67,17 +67,17 @@ const TermsAndConditionsContent = () => (
             Website Design, Electronic & Print Media
           </h2>
           <p className="mt-4 text-sm sm:text-base">
-            Webdesigo LLC cannot accept responsibility for any losses incurred due
+            Droplanzer cannot accept responsibility for any losses incurred due
             to malfunction of the website or any part of it or associated email
             links. The website, graphics and any programming code remain the
-            property of Webdesigo LLC until all outstanding accounts are paid in
+            property of Droplanzer until all outstanding accounts are paid in
             full. Any scripts, applications or software (unless specifically
-            agreed) written by Webdesigo LLC remain the copyright
-            of Webdesigo LLC and may only be commercially reproduced or resold with
-            the permission of Webdesigo LLC.
+            agreed) written by Droplanzer remain the copyright
+            of Droplanzer and may only be commercially reproduced or resold with
+            the permission of Droplanzer.
           </p>
           <p className="mt-4 text-sm sm:text-base">
-            Webdesigo LLC cannot take responsibility for any copyright infringements
+            Droplanzer cannot take responsibility for any copyright infringements
             caused by materials submitted by the Client. We will not be liable
             for costs incurred, compensation or loss of earnings due to the
             failure to meet agreed deadlines.
@@ -91,7 +91,7 @@ const TermsAndConditionsContent = () => (
           </h2>
           <p className="mt-4 text-sm sm:text-base">
             When renting a website, the domain name, design, and content
-            (excluding client-provided images) remain the property of Webdesigo LLC. The monthly rental includes hosting, server
+            (excluding client-provided images) remain the property of Droplanzer. The monthly rental includes hosting, server
             management, and regular SEO reviews. A non-returnable setup payment
             may be required. There is no minimum rental period. If payments are
             not received, the service may be terminated. If a client wishes to
@@ -106,7 +106,7 @@ const TermsAndConditionsContent = () => (
             Compatibility
           </h2>
           <p className="mt-4 text-sm sm:text-base">
-            Webdesigo LLC will take all reasonable steps to ensure that any
+            Droplanzer will take all reasonable steps to ensure that any
             developed/designed site or application will function correctly on
             the server it is initially installed on and when viewed with current
             versions of major browsers like Internet Explorer and Firefox. We
@@ -122,7 +122,7 @@ const TermsAndConditionsContent = () => (
           </h2>
           <p className="mt-4 text-sm sm:text-base">
             While we use highly resilient servers, no guarantees can be made as
-            to the availability or interruption of this service. Webdesigo LLC
+            to the availability or interruption of this service. Droplanzer
             cannot accept liability for losses caused by the unavailability,
             malfunction or interruption of this service. We reserve the right to
             remove without notice any material which may be deemed offensive,
@@ -214,10 +214,10 @@ const TermsAndConditionsContent = () => (
             priority to resolving issues as quickly as possible. To report abuse
             (e.g., phishing, spam), please email us at{" "}
             <a
-              href="mailto:webdesigollc@gmail.com"
+              href="mailto:contact.droplanzer@gmail.com"
               className="text-blue-600 font-semibold hover:underline"
             >
-              webdesigollc@gmail.com
+              contact.droplanzer@gmail.com
             </a>
             .
           </p>

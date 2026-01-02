@@ -10,7 +10,7 @@ import {
   FiUser,
   FiMail,
 } from "react-icons/fi";
-import { FaLinkedinIn, FaSquareXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaLinkedinIn, FaSquareXTwitter, FaInstagram, FaFacebook } from "react-icons/fa6";
 import {
   FaStar,
   FaRocket,
@@ -58,9 +58,9 @@ export const socialLinks = [
   },
   {
     id: 2,
-    name: "X (formerly Twitter)",
-    href: "https://x.com/yourcompany", // Replace with actual X (Twitter) URL
-    icon: FaSquareXTwitter,
+    name: "Facebook",
+    href: "https://Facebook.com/yourcompany", // Replace with actual X (Twitter) URL
+    icon: FaFacebook,
     hoverClass: "hover:bg-white hover:text-black",
   },
   {
@@ -281,34 +281,34 @@ export const ourapproach = [
 export const serviceCards = [
   {
     id: 1,
-    title: "Web Design",
+    title: "Web Design (UI/UX)",
     description:
-      "Crafting visually captivating websites that resonate with your audience and elevate your brand identity.",
+      "Designing visually stunning and user-friendly websites that deliver a seamless experience across all devices.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     // Use an array for 'features' or 'listItems'
     features: [
-      "Customized visual aesthetics.",
-      "User-centric design approach.",
-      "Responsive and mobile-friendly.",
-      "Intuitive user interface (UI).",
-      "Interactive and engaging layouts.",
+      "Custom UI/UX design tailored to your brand.",
+      "Responsive and mobile-friendly layouts.",
+      "Interactive and engaging interfaces.",
+      "Wireframing and prototyping.",
+      "Ongoing design improvements.",
     ],
   },
   {
     id: 2,
-    title: "Web Development",
+    title: "AI Automation & AI Agents",
     description:
-      "Building robust websites with advanced functionality and seamless performance, tailored to your business needs.",
+      "Automating business operations using AI agents, chatbots, and intelligent workflows.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     // Use an array here too
     features: [
-      "Custom backend development.",
-      "Ongoing maintenance and support.",
-      "Security and data protection.",
-      "Content management systems (CMS).",
-      "API integration and development.",
+      "Custom AI automation workflows.",
+      "AI chatbots & virtual assistants.",
+      "CRM & tool integrations.",
+      "Data-driven decision systems.",
+      "Process optimization with AI.",
     ],
   },
 ];
@@ -526,7 +526,7 @@ export const projectList = [
 export const countNumber = [
   {
     id: 1,
-    count: 150,
+    count: 45,
     sign: "+",
     des: "Happy Customers",
   },
@@ -538,19 +538,19 @@ export const countNumber = [
   },
   {
     id: 3,
-    count: 4,
+    count: 2.5,
     sign: "+",
     des: "Years of Experience",
   },
   {
     id: 4,
-    count: 86,
+    count: 15,
     sign: "+",
     des: "Team Members",
   },
 ];
 
-// Home Page: Trusted By Section
+/// Home Page: Trusted By Section
 export const trustedByLeadingBrands = [
   {
     id: 1,
@@ -587,7 +587,7 @@ export const testimonials = [
     name: "Sophia Chen",
     username: "@sophiaC",
     comment:
-      "Webdesigo transformed our outdated website into a modern, responsive masterpiece. Their design team truly understood our vision, and the development process was seamless!",
+      "Droplanzer transformed our outdated website into a modern, responsive masterpiece. Their design team truly understood our vision, and the development process was seamless!",
   },
   {
     id: 2,
@@ -602,7 +602,7 @@ export const testimonials = [
     name: "Ava Rodriguez",
     username: "@avaR",
     comment:
-      "The SEO strategy from Webdesigo has significantly boosted our organic traffic and search rankings. We're seeing a remarkable return on investment and couldn't be happier with their expertise in website optimization.",
+      "The SEO strategy from Droplanzer has significantly boosted our organic traffic and search rankings. We're seeing a remarkable return on investment and couldn't be happier with their expertise in website optimization.",
   },
   {
     id: 4,
@@ -617,7 +617,7 @@ export const testimonials = [
     name: "Isabella Garcia",
     username: "@bellaG",
     comment:
-      "From initial concept to final launch, Webdesigo provided comprehensive website solutions. Their attention to detail in both design and functionality was outstanding, making our online presence truly shine.",
+      "From initial concept to final launch, Droplanzer provided comprehensive website solutions. Their attention to detail in both design and functionality was outstanding, making our online presence truly shine.",
   },
   {
     id: 6,
@@ -632,7 +632,7 @@ export const testimonials = [
     name: "Charlotte White",
     username: "@charlotteW",
     comment:
-      "Webdesigo's development team is incredibly skilled. They built a custom feature for our e-commerce site that exceeded our expectations, improving user experience and conversion rates dramatically. Highly recommend their technical prowess!",
+      "Droplanzer's development team is incredibly skilled. They built a custom feature for our e-commerce site that exceeded our expectations, improving user experience and conversion rates dramatically. Highly recommend their technical prowess!",
   },
   {
     id: 8,
@@ -647,7 +647,7 @@ export const testimonials = [
     name: "Amelia Jones",
     username: "@ameliaJ",
     comment:
-      "Our website's performance has never been better thanks to Webdesigo's ongoing maintenance and optimization services. They are proactive and always ensure our site is running smoothly and securely.",
+      "Our website's performance has never been better thanks to Droplanzer's ongoing maintenance and optimization services. They are proactive and always ensure our site is running smoothly and securely.",
   },
   {
     id: 10,
@@ -801,122 +801,182 @@ export const founders = [
 export const ourAllServices = [
   {
     id: 1,
-    title: "Web Design",
+    title: "Web Design (UI/UX)",
     description:
-      "Crafting visually captivating websites that resonate with your audience and elevate your brand identity.",
+      "Designing visually stunning and user-friendly websites that deliver a seamless experience across all devices.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "Customized visual aesthetics.",
-      "User-centric design approach.",
-      "Responsive and mobile-friendly.",
-      "Intuitive user interface (UI).",
-      "Interactive and engaging layouts.",
+      "Custom UI/UX design tailored to your brand.",
+      "Responsive and mobile-friendly layouts.",
+      "Interactive and engaging interfaces.",
+      "Wireframing and prototyping.",
+      "Ongoing design improvements.",
     ],
   },
   {
     id: 2,
-    title: "Web Development",
+    title: "App Development (UI/UX)",
     description:
-      "Building robust websites with advanced functionality and seamless performance, tailored to your business needs.",
+      "Building modern mobile and web apps with intuitive UI/UX and powerful performance.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "Custom backend development.",
-      "Ongoing maintenance and support.",
-      "Security and data protection.",
-      "Content management systems (CMS).",
-      "API integration and development.",
+      "Custom mobile & web app UI/UX.",
+      "Cross-platform development.",
+      "Backend & API integration.",
+      "Performance optimization.",
+      "Testing and deployment support.",
     ],
   },
   {
     id: 3,
-    title: "Content Writing",
+    title: "AI Automation & AI Agents",
     description:
-      "Delivering compelling and SEO-optimized content that aligns with your brand voice and engages your audience.",
+      "Automating business operations using AI agents, chatbots, and intelligent workflows.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "SEO-optimized blog posts and articles.",
-      "Professional website copywriting.",
-      "Brand-consistent tone and messaging.",
-      "Engaging product descriptions.",
-      "Proofreading and editing services.",
+      "Custom AI automation workflows.",
+      "AI chatbots & virtual assistants.",
+      "CRM & tool integrations.",
+      "Data-driven decision systems.",
+      "Process optimization with AI.",
     ],
   },
   {
     id: 4,
-    title: "Branding",
+    title: "Graphic Design",
     description:
-      "Creating a powerful and cohesive brand identity that makes a lasting impression and drives customer loyalty.",
+      "High-quality digital graphic design for branding, marketing, and online presence.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "Brand strategy and positioning.",
-      "Visual identity development.",
-      "Color palette and typography selection.",
-      "Voice and tone guidelines.",
-      "Comprehensive brand guidelines.",
+      "Logo & brand identity design.",
+      "Social media & ad creatives.",
+      "Vector & scalable designs.",
+      "Banners, thumbnails & visuals.",
+      "Consistent brand aesthetics.",
     ],
   },
   {
     id: 5,
-    title: "Social Post Design",
+    title: "SEO & AEO/GEO Optimization",
     description:
-      "Designing eye-catching social media graphics that enhance engagement and maintain brand consistency.",
+      "Boosting search visibility with SEO plus modern AEO & GEO optimization strategies.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "Platform-specific post designs.",
-      "Branded templates and themes.",
-      "Animation and motion graphics.",
-      "Story and reel visuals.",
-      "Consistent visual storytelling.",
+      "Keyword research & optimization.",
+      "On-page & technical SEO.",
+      "AEO & GEO optimization.",
+      "Backlink building strategies.",
+      "Analytics & performance tracking.",
     ],
   },
   {
     id: 6,
-    title: "SEO",
+    title: "Content Writing",
     description:
-      "Optimizing your website to improve visibility on search engines, attract organic traffic, and boost conversions.",
+      "Engaging, SEO-friendly content that builds trust and converts visitors into customers.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "Keyword research and targeting.",
-      "On-page SEO optimization.",
-      "Technical SEO audits.",
-      "Backlink building strategies.",
-      "Analytics and performance reporting.",
+      "Blog & article writing.",
+      "Website & landing page copy.",
+      "Product descriptions.",
+      "Brand tone consistency.",
+      "Editing & proofreading.",
     ],
   },
   {
     id: 7,
-    title: "Packaging Design",
+    title: "Digital Marketing",
     description:
-      "Designing innovative and functional packaging that communicates your brand message and attracts customers.",
+      "Result-driven digital marketing strategies to grow traffic, leads, and revenue.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "Custom packaging concepts.",
-      "Brand-consistent visual design.",
-      "Structural and dieline planning.",
-      "Eco-friendly material options.",
-      "Retail shelf appeal design.",
+      "Marketing strategy & planning.",
+      "Lead generation campaigns.",
+      "Funnel & conversion optimization.",
+      "Analytics & reporting.",
+      "Growth-focused execution.",
     ],
   },
   {
     id: 8,
-    title: "Logo Design",
+    title: "Social Media Management",
     description:
-      "Crafting unique and memorable logos that visually represent your brand’s identity and values.",
+      "Managing and growing social media accounts across all platforms including OnlyFans.",
     btnUrl: "/contact",
     btnText: "Contact Us",
     features: [
-      "Multiple concept explorations.",
-      "Scalable vector formats.",
-      "Color and black-and-white variations.",
-      "Typography and iconography selection.",
-      "Final files for web and print.",
+      "Content creation & scheduling.",
+      "Community & DM management.",
+      "Growth & engagement strategies.",
+      "Analytics & reporting.",
+      "OnlyFans & niche platform handling.",
+    ],
+  },
+  {
+    id: 9,
+    title: "E-Commerce Solutions",
+    description:
+      "Building and optimizing online stores for high conversions and smooth user experience.",
+    btnUrl: "/contact",
+    btnText: "Contact Us",
+    features: [
+      "Shopify & WooCommerce setup.",
+      "Payment gateway integration.",
+      "Product & order management.",
+      "Conversion optimization.",
+      "Store performance analytics.",
+    ],
+  },
+  {
+    id: 10,
+    title: "YouTube Automation",
+    description:
+      "End-to-end YouTube automation to scale channels and maximize monetization.",
+    btnUrl: "/contact",
+    btnText: "Contact Us",
+    features: [
+      "Video upload & scheduling.",
+      "SEO titles, tags & descriptions.",
+      "Thumbnail & branding support.",
+      "Comment moderation.",
+      "Growth & monetization strategy.",
+    ],
+  },
+  {
+    id: 11,
+    title: "Pay-Per-Click (PPC) Ads",
+    description:
+      "High-ROI paid advertising campaigns across Google, Meta, and other platforms.",
+    btnUrl: "/contact",
+    btnText: "Contact Us",
+    features: [
+      "Google & Meta Ads setup.",
+      "Ad creatives & copywriting.",
+      "Audience targeting.",
+      "A/B testing & optimization.",
+      "ROI-focused reporting.",
+    ],
+  },
+  {
+    id: 12,
+    title: "Online Reputation Management",
+    description:
+      "Protecting and improving your brand image across search engines and social platforms.",
+    btnUrl: "/contact",
+    btnText: "Contact Us",
+    features: [
+      "Review monitoring & responses.",
+      "Brand mention tracking.",
+      "Crisis management.",
+      "SEO-based reputation repair.",
+      "Ongoing reputation reports.",
     ],
   },
 ];
@@ -995,7 +1055,7 @@ export const webDesignPageData = [
     src: "/assets/imgs/webdesign/insign.webp",
   },
   {
-    src: "/assets/imgs/webdesign/WebDesigo.png",
+    src: "/Artboard 2.1.svg",
   },
 
   {

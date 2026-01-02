@@ -187,10 +187,10 @@ export const Contact = () => {
                   Get a response within 24 hours
                 </p>
                 <a
-                  href="mailto:thewebdesigo@gmail.com"
+                  href="mailto:contact.droplanzer@gmail.com"
                   className="mt-2 inline-block text-indigo-400 font-medium hover:text-indigo-300 transition-colors"
                 >
-                  thewebdesigo@gmail.com
+                  contact.droplanzer@gmail.com
                 </a>
               </div>
             </div>
@@ -202,12 +202,12 @@ export const Contact = () => {
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-white">Phone</h3>
-                <p className="text-gray-400 mt-1">Mon-Fri, 9AM-6PM EST</p>
+                <p className="text-gray-400 mt-1">Mon-Fri 24-hours </p>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+03199231399"
                   className="mt-2 inline-block text-indigo-400 font-medium hover:text-indigo-300 transition-colors"
                 >
-                  +1 (555) 123-4567
+                  03199231399
                 </a>
               </div>
             </div>
@@ -238,9 +238,9 @@ export const Contact = () => {
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-white">Office</h3>
-                <p className="text-gray-400 mt-1">Webdesigo LLC</p>
+                <p className="text-gray-400 mt-1">Droplanzer</p>
                 <p className="mt-2 text-gray-300 font-medium">
-                  30 N Gould St Ste R, Sheridan, WY 82801, USA
+                  Remote | Worldwide
                 </p>
               </div>
             </div>

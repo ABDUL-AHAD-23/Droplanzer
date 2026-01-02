@@ -22,7 +22,7 @@ const AccessibilityContent = () => (
             Our Commitment
           </h2>
           <p className="mt-4 text-sm sm:text-base">
-            At webdesigo, we strive to make our website as
+            At Droplanzer, we strive to make our website as
             accessible as possible for the widest possible audience. We actively
             work to improve accessibility wherever possible and adhere to the
             available standards and guidelines.
@@ -68,8 +68,8 @@ const AccessibilityContent = () => (
           <p className="mt-4 text-sm sm:text-base">
             We are continually seeking out solutions that will bring all areas
             of the site up to the same level of overall web accessibility. In
-            the meantime, should you experience any difficulty in accessing the
-            UK Website Workshop Limited website, please{" "}
+            In the meantime, should you experience any difficulty in accessing this
+            website, please{" "}
             <a
               href="/contact" // Assuming a contact page route
               className="text-blue-600 font-semibold hover:underline"

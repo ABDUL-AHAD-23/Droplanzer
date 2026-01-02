@@ -1,6 +1,6 @@
-# Webdesigo – Frontend for Website Agencies
+# Droplanzer – Frontend for Website Agencies
 
-Webdesigo is a clean and fast Next.js template built for creative agencies, studios, and freelancers. It helps you present your services, portfolio, and digital projects in a professional way.
+Droplanzer is a clean and fast Next.js template built for creative agencies, studios, and freelancers. It helps you present your services, portfolio, and digital projects in a professional way.
 
 
 
@@ -33,7 +33,7 @@ Webdesigo is a clean and fast Next.js template built for creative agencies, stud
 1. Clone the repository
 ```bash
   git clone <repository-url>
-  cd WebDesigo
+  cd Droplanzer
 ```
 
 2. Install dependencies
@@ -47,16 +47,16 @@ npm install
 
 ```
 # Mailtrap sandbox (testing only). Use production SMTP host in live environment.
-SMTP_HOST="sandbox.smtp.mailtrap.io"  
+SMTP_HOST="gmail.com"  
 
-SMTP_PORT="2525"
-SMTP_USER="Your_user"
-SMTP_PASS="Password"
-YOUR_EMAIL_ADDRESS="Your_mail_where_you_will_receive_Mail"
+SMTP_PORT="587"
+SMTP_USER="contact.droplanzer@gmail.com"
+SMTP_PASS="czcy zpun idrs tlgh"
+ADMIN_EMAIL="contact.droplanzer@gmail.com"
 
 
-NEXT_PUBLIC_RECAPTCHA_SITE_KEY="Your_Key"
-RECAPTCHA_SECRET_KEY="Your_Secret"
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY="6LfUNz4sAAAAAHLnof6sLJ_WSm-XHUlb0N21Wg5x"
+RECAPTCHA_SECRET_KEY="6LfUNz4sAAAAACp-JFk4miZloKqfm06rAsVqKolx"
 
 ```
 

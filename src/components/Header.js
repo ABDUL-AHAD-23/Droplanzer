@@ -101,7 +101,7 @@ export const Header = () => {
 
 
                 <Link href="/" onClick={handleLinkClick} className="z-10">
-                    <Image src="/websigo.svg" width={100} height={100} alt="WEBDESIGO" />
+                    <Image src="/Artboard 2.1.svg" width={100} height={100} alt="Droplanzer" />
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -188,7 +188,7 @@ export const Header = () => {
 
                     {/* Footer Info in Mobile Menu */}
                     <div className="text-center p-6 text-xs text-secondary/50 gap-4">
-                        <span>&copy; {new Date().getFullYear()} WebDesigo</span>
+                        <span>&copy; {new Date().getFullYear()} Droplanzer</span>
                     </div>
                 </div>
             )}
