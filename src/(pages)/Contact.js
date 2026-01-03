@@ -145,7 +145,7 @@ export const Contact = () => {
       } else {
         setStatus("error");
         setResponseMessage(
-          data.message || "❌ Something went wrong. Please try again."
+          data.message || data.error || "❌ Something went wrong. Please try again."
         );
       }
     } catch (error) {

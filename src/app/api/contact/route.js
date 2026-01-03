@@ -13,35 +13,38 @@ export async function POST(req) {
     }
 
     try {
-      const response = await fetch(
-        "https://www.google.com/recaptcha/api/siteverify",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-          body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`,
-        }
-      );
+      // Verify the reCAPTCHA token with Google's API
+      const response = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({ secret: process.env.RECAPTCHA_SECRET_KEY || "", response: token }).toString(),
+      });
 
       const recaptchaData = await response.json();
 
-      // For reCAPTCHA v2, we just check the 'success' property.
-      // There is no score.
-      if (recaptchaData.success) {
-        // SUCCESS: The token is valid.
-        // Proceed with your form logic (e.g., send an email).
-        // Configure the transporter for Nodemailer
-        const transporter = nodemailer.createTransport({
-          host: process.env.SMTP_HOST,
-          port: Number(process.env.SMTP_PORT),
-          secure: process.env.SMTP_PORT === "465", // true for 465, false for other ports
-          auth: {
-            user: process.env.SMTP_USERNAME,
-            pass: process.env.SMTP_PASSWORD,
-           },
+      if (!recaptchaData || !recaptchaData.success) {
+        console.error("reCAPTCHA verify failed:", recaptchaData);
+        return NextResponse.json({ error: "reCAPTCHA verification failed" }, { status: 400 });
+      }
 
-        });
+      // SUCCESS: The token is valid.
+      // Proceed with your form logic (e.g., send an email).
+      // Quick check to ensure SMTP config exists
+      if (!process.env.SMTP_HOST || !process.env.SMTP_PORT || !process.env.SMTP_USER || !process.env.SMTP_PASS || !process.env.ADMIN_EMAIL) {
+        console.error("SMTP or admin email not configured properly.");
+        return NextResponse.json({ error: "Mail service not configured" }, { status: 500 });
+      }
+
+      // Configure the transporter for Nodemailer
+      const transporter = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: Number(process.env.SMTP_PORT),
+        secure: String(process.env.SMTP_PORT) === "465", // true for 465, false for other ports
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      });
 
         // Send the notification email to yourself
         const mailOptionsToAdmin = {
@@ -98,28 +101,26 @@ export async function POST(req) {
         };
         
 
-        // Send both emails
-        await transporter.sendMail(mailOptionsToAdmin);
-        await transporter.sendMail(mailOptionsToUser);
+        // Send both emails and catch possible sending errors
+        try {
+          await transporter.sendMail(mailOptionsToAdmin);
+          await transporter.sendMail(mailOptionsToUser);
+        } catch (sendError) {
+          console.error("Error sending emails:", sendError);
+          return NextResponse.json({ error: "Failed to send emails" }, { status: 500 });
+        }
 
         return NextResponse.json(
           { message: "Emails sent successfully!" },
           { status: 200 }
         );
-      } else {
-        // FAILURE: The token is invalid.
+      } catch (error) {
+        console.error("reCAPTCHA response error:", error);
         return NextResponse.json(
-          { error: "reCAPTCHA verification failed." },
-          { status: 400 }
+          { error: "reCAPTCHA Failed" },
+          { status: 500 }
         );
       }
-    } catch (error) {
-      console.error("reCAPTCHA response error:", error);
-      return NextResponse.json(
-        { error: "reCAPTCHA Failed" },
-        { status: 500 }
-      );
-    }
   } catch (error) {
     console.error("Error sending email:", error);
     return NextResponse.json(
